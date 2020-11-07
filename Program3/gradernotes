@@ -1,0 +1,13 @@
+1) I believe everything works perfectly under all conditions
+2) I wrote the p3helper.c code myself
+3) To accomplish this problem, I created 3 semaphores: a shooter, jogger, and gym. In the initstudentstuff() method
+   I set each semaphore to 1. This means they are all locked essentially. In prolog, I use an if else to filter out
+   shooter or jogger. Within the statements which are identical except switched between shooter and joggers. This 
+   method gives access to the gym to one or the other. I did this by giving shooter access using semwait, setting the
+   shooter to 0. We then increment the count of the shooter by 1 and check if count is 1. This indicates this is the
+   first shooter or jogger in the gym. We then take away access to the gym by incrementing the shooter semaphore with 
+   sempost. In epilog, we want to let out the shooters or joggers from the gym. I filtered shooters and joggers with an
+   if statement. To let them out we once again give access by setting the semaphore to 0 and decrement the count until 
+   the count is 0, then we know the last shooter or jogger has left the gym. After this we can once again take away their
+   access to the gym by setting the shooter or jogger to 1 with sempost.
+

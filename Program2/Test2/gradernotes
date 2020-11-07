@@ -1,0 +1,6 @@
+I wrote this code myself
+A lot of the code was referenced from Carroll's Spiral Notes, including some of the programs such as dup.c, pipe.c,fork2.c,dir.c,sig.c etc.
+Current bugs include: 
+	- prompt gets printed on same line as echo
+	
+
