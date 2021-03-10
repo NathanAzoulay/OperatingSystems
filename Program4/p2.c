@@ -1,7 +1,5 @@
 /* Nathan Azoulay
- * CS 570, Professor John Carroll
  * 9/9/2020
- * Program 2
  * p2.c
  * The program should replicate a bash shell, executing commands appropriately. We first parse the input and set flags 
  * in order to know what to do with the command. 
