@@ -1,7 +1,5 @@
 /* Nathan Azoulay
- * CS 570, Professor John Carroll
  * 9/9/2020
- * Program 2
  * getword.c
  * This program will handle input appropriately by looking for certain characters with different cases.
  * getword returns the count of our character array. We return -255 when EOF has been reached
